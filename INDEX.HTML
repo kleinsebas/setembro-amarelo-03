@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setembro Amarelo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffeb3b, #ffe082);
+            font-family: 'Quicksand', sans-serif;
+            color: #5d4037;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #fbc02d;
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #fbc02d;
+            margin-bottom: 20px;
+            animation: fadeIn 1s;
+        }
+        h2 {
+            font-size: 2em;
+            color: #f57f20;
+            margin: 20px 0 10px;
+            animation: fadeIn 1s;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            line-height: 1.6;
+            opacity: 0;
+            animation: slideIn 0.5s forwards, pulse 1.5s infinite alternate;
+            transition: color 0.3s;
+        }
+        p:nth-child(n+3) {
+            animation-delay: 0.5s; 
+        }
+        p:hover {
+            color: #f57f20; 
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.03);
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #6c757d;
+            animation: fadeIn 1s;
+        }
+        .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #fbc02d;
+        }
+        .resources {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f9fbe7;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .resources a {
+            color: #f57f20;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .resources a:hover {
+            text-decoration: underline;
+        }
+        .quote {
+            font-style: italic;
+            color: #7d5b1e;
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 4px solid #fbc02d;
+            background-color: #fff8e1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.02); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="imagem01" src="amarelo.webp">
+        <h1>Setembro Amarelo 🌼</h1>
+        <p>Um mês de conscientização e esperança.</p>
+        
+        <h2><span class="icon">🌟</span>Por que Setembro Amarelo?</h2>
+        <p>
+            O Setembro Amarelo é um mês dedicado à conscientização sobre a prevenção do suicídio, um tema que, muitas vezes, é envolto em tabus e preconceitos. Neste período, é fundamental falarmos abertamente sobre saúde mental, um aspecto essencial da vida de todos nós.
+        </p>
+
+        <h2><span class="icon">💬</span>Conscientização e Prevenção</h2>
+        <p>
+            A prevenção do suicídio começa com a conscientização. É importante que a sociedade entenda que os pensamentos suicidas podem afetar qualquer pessoa, independentemente de idade, gênero ou situação social. Muitas vezes, aqueles que estão sofrendo não sabem como pedir ajuda, sentindo-se isolados e sem saída. A comunicação aberta e empática é crucial para oferecer suporte e entender que o que eles sentem é válido.
+        </p>
+
+        <h2><span class="icon">💖</span>A Importância da Saúde Mental</h2>
+        <p>
+            A saúde mental deve ser uma prioridade em nossas vidas. Assim como cuidamos do nosso corpo, é essencial cuidar da nossa mente. Práticas como meditação, exercícios físicos, uma alimentação balanceada e momentos de lazer podem ajudar a manter o bem-estar emocional. Além disso, procurar um profissional da saúde mental, como psicólogos e psiquiatras, é um passo importante para quem está enfrentando dificuldades.
+        </p>
+
+        <h2><span class="icon">🆘</span>Se Você Precisa de Ajuda</h2>
+        <p>
+            Se você ou alguém que você conhece está pensando em suicídio, é vital que busquem ajuda. Conversar com alguém de confiança pode fazer toda a diferença. Às vezes, um simples "como você está?" pode abrir portas para um diálogo que pode salvar vidas. Lembre-se de que não há vergonha em pedir ajuda; é um ato de coragem e um passo em direção à cura.
+        </p>
+
+        <h2><span class="icon">🤝</span>Juntos Podemos Fazer a Diferença</h2>
+        <p>
+            Neste Setembro Amarelo, vamos nos unir em prol da conscientização. Compartilhe informações, ofereça apoio e, acima de tudo, esteja presente. Juntos, podemos construir um ambiente mais acolhedor e compreensivo, onde todos se sintam seguros para expressar seus sentimentos e buscar ajuda. A vida é preciosa, e cada um de nós pode ser um farol de esperança para aqueles que precisam.
+        </p>
+
+        <div class="quote">
+            <p>“Falar sobre suicídio não faz com que as pessoas cometam suicídio; faz com que se sintam mais à vontade para pedir ajuda.”</p>
+        </div>
+
+        <div class="resources">
+            <h2><span class="icon">📚</span>Recursos Úteis</h2>
+            <p>
+                Aqui estão alguns recursos importantes onde você pode encontrar apoio:
+                <ul>
+                    <li><a href="https://cvv.org.br" target="_blank">CVV - Centro de Valorização da Vida</a></li>
+                    <li><a href="https://www.gov.br/saude" target="_blank">Ministério da Saúde</a></li>
+                    <li><a href="https://www.ans.gov.br" target="_blank">ANS - Agência Nacional de Saúde Suplementar</a></li>
+                </ul>
+            </p>
+        </div>
+        
+        <img id="imagem02" src="set-amarelo-2023.webp">
+    </div>
+
+    <footer>
+        <p>Se você ou alguém que você conhece precisa de ajuda, não hesite em procurar apoio. 💛</p>
+    </footer>
+</body>
+</html>
+
